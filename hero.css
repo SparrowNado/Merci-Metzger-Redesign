@@ -1,0 +1,251 @@
+/*-- -------------------------- -->
+<---            Hero            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #hero-section {
+      padding: var(--sectionPadding);
+      /* 160px - 200px */
+      padding-top: clamp(10rem, 20vw, 12.5rem);
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+    }
+    #hero-section .cs-container {
+      width: 100%;
+      max-width: 80rem;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    #hero-section .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      text-align: center;
+      width: 100%;
+      /* 40px - 52px */
+      margin-bottom: clamp(2.5rem, 5vw, 3.25rem);
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    #hero-section .cs-flex {
+      /* prevents flexbox from squishing it */
+      flex: none;
+    }
+    #hero-section .cs-title {
+      /* 39px - 61px */
+      font-size: clamp(2.438rem, 5vw, 3.813rem);
+    }
+    #hero-section .cs-text {
+      margin-bottom: 1.25rem;
+    }
+    #hero-section .cs-button-solid {
+      font-size: 1rem;
+      font-weight: 700;
+      /* 46px - 56px */
+      line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+      text-align: center;
+      text-decoration: none;
+      min-width: 9.375rem;
+      margin: 0;
+      /* prevents padding from adding to the width */
+      box-sizing: border-box;
+      /* 32px - 48px */
+      padding: 0 clamp(2rem, 4vw, 3rem);
+      background-color: var(--primary);
+      color: var(--bodyTextColorWhite);
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      transition: color 0.3s;
+      transition: background-color 0.3s;
+    }
+    #hero-section .cs-button-solid:hover {
+      background-color: #000;
+      color: #fff;
+    }
+    #hero-section .cs-picture {
+      width: 100%;
+      /* 280px - 510px */
+      height: clamp(17.5rem, 58.6vw, 31.875rem);
+      /* 16px - 20px */
+      margin-bottom: clamp(1rem, 2vw, 1.25rem);
+      display: block;
+      position: relative;
+    }
+    #hero-section .cs-picture video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 2.5rem;
+      position: absolute;
+    }
+    #hero-section .cs-card-group {
+      width: 100%;
+      margin-top: 20px;
+      /* margin: 0; */
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      grid-template-columns: repeat(12, 1fr);
+      /* 16px - 20px */
+      gap: clamp(1rem, 2vw, 1.25rem);
+    }
+    #hero-section .cs-item {
+      text-align: center;
+      list-style: none;
+      width: 100%;
+      margin: 0;
+      box-sizing: border-box;
+      /* 24px - 32px */
+      padding: clamp(1.5rem, 3vw, 2rem);
+      background-color: #F7F7F7;
+      border-radius: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-column: span 12;
+      position: relative;
+      z-index: 1;
+      transition: border-color 0.3s;
+    }
+    #hero-section .cs-item:hover {
+      border-color: var(--primary);
+    }
+    #hero-section .cs-item:hover .cs-h3 {
+      color: var(--primary);
+    }
+    #hero-section .cs-item:hover .cs-icon {
+      transform: rotateY(360deg);
+    }
+    #hero-section .cs-icon-picture {
+      margin-bottom: 1.25rem;
+      perspective: 700px;
+      transform-style: preserve-3d;
+    }
+    #hero-section .cs-icon {
+      width: 2.5rem;
+      height: auto;
+      display: block;
+      transition: transform 0.5s;
+    }
+    #hero-section .cs-h3 {
+      font-size: 1.25rem;
+      line-height: 1.5em;
+      text-align: inherit;
+      margin: 0;
+      margin-bottom: 0.75rem;
+      color: var(--headerColor);
+      transition: color 0.3s;
+    }
+    #hero-section .cs-item-text {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      line-height: 1.5em;
+      text-align: inherit;
+      margin: 0;
+      color: var(--bodyTextColor);
+    }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #hero-section .cs-text {
+      font-size: 1.25rem;
+    }
+    #hero-section .cs-item {
+      text-align: left;
+      margin: 0;
+      align-items: flex-start;
+      grid-column: span 6;
+    }
+  }
+  /* Small Desktop - 1024px */
+  @media only screen and (min-width: 64rem) {
+    #hero-section .cs-content {
+      display: flex;
+      flex-direction: column;
+    }
+    #hero-section .cs-title {
+      max-width: 46.875rem;
+    }
+    #hero-section .cs-item {
+      grid-column: span 3;
+    }
+  }
+  /* Large Desktop 1300px */
+  @media only screen and (min-width: 81.25rem) {
+    #hero-section .cs-title {
+      margin: 0;
+    }
+    #hero-section .cs-container {
+      flex-direction: column;
+    }
+    #hero-section .cs-content {
+      text-align: left;
+      max-width: 80rem;
+      gap: 1.25rem;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    #hero-section .cs-flex {
+      width: 50%;
+      max-width: 39.375rem;
+    }
+  }
+                                  
+
+
+
+  #hero-section{
+    background-color: #1A1A1A;
+  }
+  
+  .cs-title{
+    color: #F1F1F1;
+    text-wrap: balance;
+  }
+
+  .cs-text{
+   color: #F9F3EF;
+  }
+
+  .cs-picture video {
+    box-shadow: 0 0 25px 5px #F9F3EF;
+  }
+
+  .cs-item.first {
+ 
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+      url('https://img1.wsimg.com/isteam/stock/3395/:/cr=t:11.02%25,l:0%25,w:100%25,h:77.95%25/rs=w:600,h:300,cg:true');
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  .cs-item.second {
+ 
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+      url('https://img1.wsimg.com/isteam/stock/107927/:/rs=w:600,h:300,cg:true,m/cr=w:600,h:300');
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  
+  .cs-item.third {
+ 
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+      url('https://img1.wsimg.com/isteam/stock/771/:/cr=t:5.36%25,l:1.76%25,w:96.47%25,h:89.29%25/rs=w:600,h:300,cg:true,m');
+    background-size: cover;
+    background-position: center;
+  }
