@@ -22,6 +22,10 @@
       position: relative;
       z-index: 1;
     }
+    .cs-card-group{
+      flex-direction: column;
+    }
+
     #hero-section .cs-content {
       /* set text align to left if content needs to be left aligned */
       text-align: center;
@@ -167,6 +171,7 @@
     }
   }
   /* Small Desktop - 1024px */
+  
   @media only screen and (min-width: 64rem) {
     #hero-section .cs-content {
       display: flex;
@@ -177,6 +182,10 @@
     }
     #hero-section .cs-item {
       grid-column: span 3;
+    }
+
+    .cs-card-group{
+      flex-direction: row;
     }
   }
   /* Large Desktop 1300px */
@@ -197,6 +206,10 @@
     #hero-section .cs-flex {
       width: 50%;
       max-width: 39.375rem;
+    }
+
+    .cs-card-group{
+      flex-direction: row;
     }
   }
                                   
@@ -249,3 +262,5 @@
     background-size: cover;
     background-position: center;
   }
+
+
