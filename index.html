@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="partners.css">
     <link rel="stylesheet" href="service.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="shortcut icon" href="https://github.com/SparrowNado/image-repo/raw/refs/heads/main/mmlogofav.webp" type="image/x-icon">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="inquiry.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css">
     <script src="pagescript.js" defer></script>
     <script src="script.js" defer></script>
-    <linkrel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marci Metzger Homes - Real Estate</title>
 </head>
@@ -157,7 +159,19 @@
     </div>
 </section>
                                 
-                            
+<section class="gallery-section">
+    <swiper-container class="mySwiper" pagination="true" pagination-dynamic-bullets="true" loop="true" autoplay-delay="2500">
+      <swiper-slide class="slide first"></swiper-slide>
+      <swiper-slide class="slide second"></swiper-slide>
+      <swiper-slide class="slide third"></swiper-slide>
+      <swiper-slide class="slide fourth"></swiper-slide>
+      <swiper-slide class="slide fifth"></swiper-slide>
+      <swiper-slide class="slide sixth"></swiper-slide>
+      <swiper-slide class="slide seventh"></swiper-slide>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    </swiper-container>
+  </section>
+             
 
  
 <section id="about-us-section">
@@ -245,6 +259,156 @@
 
   </section>
 
+
+
+  <section class="search-listings">
+    <div class="container">
+      <h2>Search Listings</h2>
+      <form class="search-form">
+        
+        <!-- Row 1 -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" placeholder="Enter location">
+          </div>
+          
+          <div class="form-group">
+            <label for="type">Type</label>
+            <select id="type" name="type">
+              <option value="">Any</option>
+              <option value="house">House</option>
+              <option value="condo">Condo</option>
+              <option value="apartment">Apartment</option>
+            </select>
+          </div>
+  
+          <div class="form-group">
+            <label for="sort">Sort By</label>
+            <select id="sort" name="sort">
+              <option value="latest">Latest</option>
+              <option value="price_low">Price (Low to High)</option>
+              <option value="price_high">Price (High to Low)</option>
+              <option value="bedrooms">Bedrooms</option>
+            </select>
+          </div>
+        </div>
+  
+        <!-- Row 2 -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bedrooms">Bedrooms</label>
+            <select id="bedrooms" name="bedrooms">
+              <option value="">Any</option>
+              <option value="1">1+</option>
+              <option value="2">2+</option>
+              <option value="3">3+</option>
+              <option value="4">4+</option>
+            </select>
+          </div>
+  
+          <div class="form-group">
+            <label for="baths">Baths</label>
+            <select id="baths" name="baths">
+              <option value="">Any</option>
+              <option value="1">1+</option>
+              <option value="2">2+</option>
+              <option value="3">3+</option>
+            </select>
+          </div>
+        </div>
+  
+        <!-- Row 3 -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="min-price">Min Price</label>
+            <input type="number" id="min-price" name="min-price" placeholder="e.g. 100000">
+          </div>
+  
+          <div class="form-group">
+            <label for="max-price">Max Price</label>
+            <input type="number" id="max-price" name="max-price" placeholder="e.g. 500000">
+          </div>
+        </div>
+  
+        <!-- Button -->
+        <div class="form-row">
+          <button type="submit" class="search-btn">Search Now</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+
+
+
+  <section class="contact-map">
+    <!-- Left: Contact Form -->
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your email">
+
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Write your message..."></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Right: Laptop with Google Maps -->
+    <div class="laptop">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d5414.350963737692!2d-115.9842444519827!3d36.20565750759634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s3190%20HW-160%2C%20Suite%20F%2C%20Pahrump%2C%20Nevada%2089048%2C%20United%20States!5e0!3m2!1sen!2sph!4v1755323520810!5m2!1sen!2sph" 
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+ 
+
+  <footer id="footer-ending">
+    <div class="cs-container">
+        <div class="cs-top">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <img class="cs-logo-img" loading="lazy" decoding="async" src="https://raw.githubusercontent.com/SparrowNado/image-repo/refs/heads/main/FOOTER-logo.jpg" alt="logo" width="168" height="48">
+            </a>
+  
+        </div>
+        <div class="cs-bottom">
+            <!--Social-->
+            <ul class="cs-social">
+                <li class="cs-social-li">
+                    <a href="" class="cs-social-link" aria-label="facebook" target="_blank" rel="noopener">
+                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-white.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                    </a>
+                </li>
+                <li class="cs-social-li">
+                    <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
+                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-white.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                    </a>
+                </li>
+                <li class="cs-social-li">
+                    <a href="" class="cs-social-link" aria-label="instagram" target="_blank" rel="noopener">
+                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-transparent.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                    </a>
+                </li>
+                <li class="cs-social-li">
+                    <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
+                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-transparent2.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                    </a>
+                </li>
+            </ul>
+            <span class="cs-copyright">
+                © Copyright 2025 - <a href="" class="cs-copyright-link">Marci METZGER Homes - All Rights Reserved</a>
+            </span>
+        </div>
+    </div>
+ 
+  
+</footer>
+                                
   
 </body>
 </html>
